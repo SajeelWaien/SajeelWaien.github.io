@@ -2,6 +2,8 @@
 
 .App {
   text-align: center;
+  display: grid;
+  grid-template-rows: 100vh 100vh 100vh;
 }
 
 .App-logo {
@@ -51,19 +53,44 @@
 
 * { text-decoration: none;}
 
-.typewrite > .wrap { 
-  border-right: 0.08em solid #fff;
+.typewrite {
+  height: 1.5em;
+  position: relative;
+}
+
+.typewrite > .wrap {
+  /* content: '|'; */
+  /* position: absolute; */
+  /* color: white; */
+  border-right: 0.1em solid white;
   animation: blink2 1s infinite;
-  box-sizing: border-box;
+}
+
+.cursor{
+  background-color: white;
+  width: 0.8em;
+  animation: blink 1s infinite;
 }
 
 .typewrite {
-  display: block;
+
+}
+
+.highlight {
+  color: white;
+}
+
+.intro {
+  color: white;
 }
 
 @keyframes blink2 {
-  0% { border-right: 0.08em solid #fff; }
-  50% { border-right: 0.08em solid #fff; }
-  51% { border-right: none}
-  100% { border-right: none }
-} 
+  0% { border-right-color: white; }
+  50% { border-right-color: white; }
+  51% { border-right-color: #282c34; }
+  100% { border-right-color: #282c34; }
+}
+
+.particles {
+  position: absolute;
+}

@@ -4,6 +4,8 @@ import {ReactComponent as Logo} from './assets/led.svg';
 import {ReactComponent as Sun} from './assets/sun.svg';
 import './App.css';
 import Typewriter from './headline/typewriter';
+import Particles from 'react-particles-js';
+import particlesConfig from './assets/particlesjs-config.json';
 
 class App extends Component {
   constructor(props) {
@@ -26,14 +28,20 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">          
+        <header className="App-header">
+          <Particles 
+            width="100vw"
+            height="100vh"
+            params={particlesConfig}
+            className="particles"
+          />
           <h1>
-            <p href="" className="typewrite" data-period="2000" data-type={`[ "Hi, I'm Sajeel."]`}>
+            <div className="typewrite highlight" data-period="2000" data-type={`[ "Hi, I'm Sajeel,"]`}>
               <span className="wrap"></span>
-            </p>
-            <p href="" className="typewrite" data-period="1000" data-type='["I am Creative.", "I Love Design.", "I Love to Develop." ]' loop>
+            </div>
+            <div className="typewrite intro" data-period="1000" data-type='["I Love to Develop,", "I Love Design,"]' loop>
               <span className="wrap"></span>
-            </p>
+            </div>
           </h1>
         </header>
       </div>
