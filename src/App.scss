@@ -5,9 +5,9 @@ $primary-gray: linear-gradient(180deg, rgba(40,44,52,1) 0%, rgba(83,88,97,1) 50%
 .App {
   text-align: center;
   display: grid;
-  grid-template-rows: 100vh minmax(100vh, auto) minmax(100vh, auto) auto;
-  grid-template-areas: "headline" "skills" "portfolio" "portfolio";
-  overflow-x: hidden;
+  grid-template-rows: 100vh minmax(100vh, auto) minmax(100vh, auto) 300px;
+  grid-template-areas: "headline" "skills" "portfolio" "footer";
+  overflow: hidden;
   font-family: Nixie One, Quicksand,'Courier New', Courier, monospace;
 }
 .Headline {
@@ -367,7 +367,7 @@ p {
     padding: 1em;
 
     img {
-      width: 80%;
+      width: 100%;
       height: auto;
       position: relative;
       // top: -20%;
@@ -377,7 +377,7 @@ p {
     h3, p {
       position: relative;
       // top: -20%;
-      white-space: wrap; 
+      white-space: wrap;
       overflow: hidden;
       text-overflow: ellipsis;
     }
@@ -401,13 +401,15 @@ p {
   grid-template-columns: repeat( auto-fill, minmax(400px, auto) );
   grid-auto-rows: auto;
   row-gap: 2%;
-  grid-auto-flow: dense;
-  // grid-auto-rows: 20%;
   justify-items: center;
 
   .placeholder {
-    height: 200px;
+    height: 120px;
     width: 100%;
+
+    @media screen and (max-width: 833px) {
+      height: 500px;
+    }
   }
 
   .portfolio-1 {

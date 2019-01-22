@@ -21,7 +21,7 @@ class Portfolio extends React.Component {
                                 <span className="portfolio-links-bar"><a href={item.github} target="_blank"><i className="fab fa-github"/></a></span>
                             </div>
                         </div>)}
-                        {/* <div className="placeholder"></div> */}
+                        <div className="placeholder"></div>
                 </div>
             </div>
         );
