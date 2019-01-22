@@ -1,0 +1,41 @@
+{
+    "portfolio": [
+        {
+            "name": "Music Streaming App",
+            "description": "Searches custom directory and its sub-directories for audio files using node fs module and upload them to mongodb gridfs. Watches directory for changes and mongodb gridfs. Watches directory for changes and update database.\n- Serves streams of audio files stored on mongodb gridfs through express server and node streams.\n- Custom music player with library, filters by artists, albums, genre, now playing, volume, shuffle, loop, and audio seeking made with react components and state handling through redux, responsive design using css media queries and percentage computed values.",
+            "github": "https://github.com/SajeelKh/Music-Streaming-App-React-Node",
+            "image": "music-player.gif"
+        },
+        {
+            "name": "Music Streaming App",
+            "description": "Searches custom directory and its sub-directories for audio files using node fs module and upload them to mongodb gridfs. Watches directory for changes and mongodb gridfs. Watches directory for changes and update database.\n- Serves streams of audio files stored on mongodb gridfs through express server and node streams.\n- Custom music player with library, filters by artists, albums, genre, now playing, volume, shuffle, loop, and audio seeking made with react components and state handling through redux, responsive design using css media queries and percentage computed values.",
+            "github": "https://github.com/SajeelKh/Music-Streaming-App-React-Node",
+            "image": "music-player.gif"
+        },
+        {
+            "name": "Music Streaming App",
+            "description": "Searches custom directory and its sub-directories for audio files using node fs module and upload them to mongodb gridfs. Watches directory for changes and mongodb gridfs. Watches directory for changes and update database.\n- Serves streams of audio files stored on mongodb gridfs through express server and node streams.\n- Custom music player with library, filters by artists, albums, genre, now playing, volume, shuffle, loop, and audio seeking made with react components and state handling through redux, responsive design using css media queries and percentage computed values.",
+            "github": "https://github.com/SajeelKh/Music-Streaming-App-React-Node",
+            "image": "music-player.gif"
+        },
+        {
+            "name": "Music Streaming App",
+            "description": "Searches custom directory and its sub-directories for audio files using node fs module and upload them to mongodb gridfs. Watches directory for changes and mongodb gridfs. Watches directory for changes and update database.\n- Serves streams of audio files stored on mongodb gridfs through express server and node streams.\n- Custom music player with library, filters by artists, albums, genre, now playing, volume, shuffle, loop, and audio seeking made with react components and state handling through redux, responsive design using css media queries and percentage computed values.",
+            "github": "https://github.com/SajeelKh/Music-Streaming-App-React-Node",
+            "image": "music-player.gif"
+        },
+        {
+            "name": "Music Streaming App",
+            "description": "Searches custom directory and its sub-directories for audio files using node fs module and upload them to mongodb gridfs. Watches directory for changes and mongodb gridfs. Watches directory for changes and update database.\n- Serves streams of audio files stored on mongodb gridfs through express server and node streams.\n- Custom music player with library, filters by artists, albums, genre, now playing, volume, shuffle, loop, and audio seeking made with react components and state handling through redux, responsive design using css media queries and percentage computed values.",
+            "github": "https://github.com/SajeelKh/Music-Streaming-App-React-Node",
+            "image": "music-player.gif"
+        },
+        {
+            "name": "Music Streaming App",
+            "description": "Searches custom directory and its sub-directories for audio files using node fs module and upload them to mongodb gridfs. Watches directory for changes and mongodb gridfs. Watches directory for changes and update database.\n- Serves streams of audio files stored on mongodb gridfs through express server and node streams.\n- Custom music player with library, filters by artists, albums, genre, now playing, volume, shuffle, loop, and audio seeking made with react components and state handling through redux, responsive design using css media queries and percentage computed values.",
+            "github": "https://github.com/SajeelKh/Music-Streaming-App-React-Node",
+            "image": "music-player.gif"
+        }
+        
+    ]
+}
