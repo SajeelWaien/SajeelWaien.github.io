@@ -4,6 +4,7 @@ import { TweenLite, CSSPlugin, TimelineLite } from 'gsap/all';
 import {ReactComponent as MernStack} from '../assets/mern-stack.svg';
 import {ReactComponent as Frontend} from '../assets/frontend.svg';
 import {ReactComponent as GraphicsDesign} from '../assets/graphics-design.svg';
+const C = CSSPlugin;
 
 class Skills extends React.Component {
     constructor(props){
@@ -22,29 +23,28 @@ class Skills extends React.Component {
     }
 
     returnDivsAnimation = () => {
-        this.divsTl
-            .from(this.divs[0], 0.5, {x:-500, opacity:0})
-            .from(this.divs[1], 0.5, {x:-500, opacity:0})
-            .from(this.divs[2], 0.5, {x:-500, opacity:0});
-
+        for(let i=0; i<this.divs.length; i++) {
+            this.divsTl
+                .from(this.divs[i], 0.5, {x:-500, opacity:0});
+        }
         return this.divsTl;
     }
 
     returnMernAnimation = () => {
         this.mernTl
-            .from("#mern-express", 1, {y:-100, opacity: 0})
-            .from("#mern-mongo", 1, {y:-50, opacity: 0})
-            .from("#mern-node", 1, {y:-50, opacity: 0})
-            .from("#mern-react", 1, {y:-50, opacity: 0});
+            .from("#mern-express", 0.5, {y:-100, opacity: 0})
+            .from("#mern-mongo", 0.5, {y:-50, opacity: 0})
+            .from("#mern-node", 0.5, {y:-50, opacity: 0})
+            .from("#mern-react", 0.5, {y:-50, opacity: 0});
 
         return this.mernTl;
     }
 
     returnfrontendAnimation = () => {
         this.frontendTl
-            .from("#frontend-lg", 1, {x:-100, opacity: 0})
-            .from("#frontend-md", 1, {x:-50, opacity: 0})
-            .from("#frontend-sm", 1, {x:-50, opacity: 0});
+            .from("#frontend-lg", 0.5, {x:-100, opacity: 0})
+            .from("#frontend-md", 0.5, {x:-50, opacity: 0})
+            .from("#frontend-sm", 0.5, {x:-50, opacity: 0});
 
             return this.frontendTl;
     }
@@ -76,13 +76,41 @@ class Skills extends React.Component {
     }
 
     componentDidMount() {
+        window.addEventListener('resize', this.resizeHandler);
         this.mainTl
             .add(this.returnDivsAnimation())
             .addLabel("svgs")
             .add(this.returnMernAnimation(), "svgs")
             .add(this.returnfrontendAnimation(), "svgs")
             .add(this.returnGraphicsAnimation(), "svgs");
-            
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener('resize', this.resizeHandler);
+    }
+
+    resizeHandler = () => {
+        if (window.matchMedia("(max-width: 800px)").matches) {
+            let skills = document.getElementsByClassName("skill");
+            for(let skill of skills){
+                skill.style.transform = "none";
+                let children = skill.children;
+                for(let child of children){
+                    child.style.transform = "none";
+                }
+            }
+        }
+
+        if (window.matchMedia("(min-width: 800px)").matches) {
+            let skills = document.getElementsByClassName("skill");
+            for(let skill of skills){
+                skill.style.transform = "skewX(-10deg)";
+                let children = skill.children;
+                for(let child of children){
+                    child.style.transform = "skewX(10deg)";
+                }
+            }
+        }
     }
 
     componentDidUpdate(prevProps, prevState) {
@@ -113,19 +141,20 @@ class Skills extends React.Component {
                 <div className="skills-container">
                     <h1>What I Do</h1>
                     <div className="skills">
-                        <div className="skill-1" ref={ele=>this.divs.push(ele)}>
+                        <div className="skill" ref={ele=>this.divs.push(ele)}>
                             <MernStack />
                             <h2>MERN Stack</h2>
                         </div>
-                        <div className="skill-2" ref={ele=>this.divs.push(ele)}>
+                        <div className="skill" ref={ele=>this.divs.push(ele)}>
                             <Frontend />
                             <h2>Frontend</h2>
                         </div>
-                        <div className="skill-3" ref={ele=>this.divs.push(ele)}>
+                        <div className="skill" ref={ele=>this.divs.push(ele)}>
                             <GraphicsDesign />
                             <h2>Graphics Design</h2>
                         </div>
                     </div>
+                    
                 </div>
             </WayPoint>
         );
