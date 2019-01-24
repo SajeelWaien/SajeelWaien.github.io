@@ -281,7 +281,7 @@ p {
   background-color: #282C34;
   box-sizing: border-box;
 
-  @media screen and (max-width: 800px){
+  @media screen and (max-width: 800px) and (orientation: landscape){
     transform: none;
     flex-basis: 100%;
   }
@@ -319,10 +319,11 @@ p {
     
     justify-content: space-around;
 
-    @media screen and (max-width: 800px ){
+    @media screen and (max-width: 800px ) and (orientation: landscape){
       width: 100%;
       flex-direction: row;
       align-content: space-around;
+      background: yellow;
     }
 
     .skill {
@@ -360,31 +361,6 @@ p {
     text-align: left;
     font-size: 3em;
     color: black;
-  }
-}
-
-@mixin multiLineEllipsis($lineHeight: 1.2em, $lineCount: 1, $bgColor: white){
-  overflow: hidden;
-  position: relative;
-  line-height: $lineHeight;
-  max-height: $lineHeight * $lineCount; 
-  text-align: justify;
-  margin-right: -1em;
-  padding-right: 1em;
-  &:before {
-    content: '...';
-    position: absolute;
-    right: 0;
-    bottom: 0;
-  }
-  &:after {
-    content: '';
-    position: absolute;
-    right: 0;
-    width: 1em;
-    height: 1em;
-    margin-top: 0.2em;
-    background: $bgColor;
   }
 }
 
@@ -432,9 +408,9 @@ p {
         position: absolute;
         bottom: 0px;
         right: 0px;
-        width: 70%;
-        height: 1.2em;
-        background: linear-gradient(to right, rgba(255, 255, 255, 0), #334361  50%);
+        width: 100%;
+        height: 2.4em;
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0), #334361  40%);
       }
     }
 
@@ -449,7 +425,7 @@ p {
     }
   }
 
-  @media screen and (max-width: 833px) {
+  @media screen and (max-width: 833px) and (orientation: landscape){
     width: 100%;
   }
 }

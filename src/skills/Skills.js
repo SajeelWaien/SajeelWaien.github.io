@@ -154,7 +154,6 @@ class Skills extends React.Component {
                             <h2>Graphics Design</h2>
                         </div>
                     </div>
-                    
                 </div>
             </WayPoint>
         );
