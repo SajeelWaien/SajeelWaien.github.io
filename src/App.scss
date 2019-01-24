@@ -281,7 +281,7 @@ p {
   background-color: #282C34;
   box-sizing: border-box;
 
-  @media screen and (max-width: 800px) and (orientation: landscape){
+  @media screen and (max-width: 800px) and (orientation: portrait){
     transform: none;
     flex-basis: 100%;
   }
@@ -319,7 +319,7 @@ p {
     
     justify-content: space-around;
 
-    @media screen and (max-width: 800px ) and (orientation: landscape){
+    @media screen and (max-width: 800px ) and (orientation: portrait){
       width: 100%;
       flex-direction: row;
       align-content: space-around;
@@ -425,7 +425,7 @@ p {
     }
   }
 
-  @media screen and (max-width: 833px) and (orientation: landscape){
+  @media screen and (max-width: 833px) and (orientation: portrait){
     width: 100%;
   }
 }
