@@ -20,7 +20,7 @@ class Portfolio extends React.Component {
 
     componentDidMount() {
         this.Tween
-            .staggerFrom(this.divs, 1, {y:100, opacity:0});
+            .staggerFrom(this.divs, 1, {y:100, opacity:0}, 0.2);
     }
 
     returnDivs = () => {

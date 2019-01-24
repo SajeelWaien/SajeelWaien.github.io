@@ -398,7 +398,6 @@ p {
       position: relative;
       // top: -20%;
       border-radius: 10px;
-      
     }
 
     h3 {
@@ -436,6 +435,7 @@ p {
 
   @media screen and (max-width: 833px) and (orientation: portrait){
     width: 95%;
+    padding-bottom: 10px;
   }
 }
 
