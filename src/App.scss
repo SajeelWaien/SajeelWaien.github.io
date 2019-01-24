@@ -280,19 +280,25 @@ p {
   border-radius: 10px;
   background-color: #282C34;
   box-sizing: border-box;
+  padding: 5px;
 
   @media screen and (max-width: 800px) and (orientation: portrait){
     transform: none;
-    flex-basis: 100%;
+    flex-basis: 95%;
+    margin-bottom: 15px;
   }
 
   svg, h2 {
-    transform: none;
+    transform: skewX(10deg);
     font-size: 1.2em;
     font-family: Quicksand;
     color: white;
 
-    @media screen and (min-width: 800px){
+    @media screen and (max-width: 800px) and (orientation: portrait){
+      transform: none;
+    }
+    @media screen and (min-width: 800px) and (orientation: portrait){
+      transform: none;
     }
   }
 }
@@ -352,7 +358,7 @@ p {
   max-width: 250px;
   height: auto;
 
-  @media screen and (max-width: 800px){
+  @media screen and (max-width: 800px) and (orientation: portrait){
     width: 20%;
   }
 }
@@ -412,7 +418,7 @@ p {
         bottom: 0px;
         right: 0px;
         width: 100%;
-        height: 1.4em;
+        height: 1.5em;
         background: linear-gradient(to bottom, rgba(255, 255, 255, 0), #334361  40%);
       }
     }
@@ -429,7 +435,7 @@ p {
   }
 
   @media screen and (max-width: 833px) and (orientation: portrait){
-    width: 100%;
+    width: 95%;
   }
 }
 
