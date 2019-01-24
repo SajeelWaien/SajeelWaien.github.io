@@ -7,9 +7,9 @@
             "image": "music-player.gif"
         },
         {
-            "name": "Music Streaming App",
-            "description": "Searches custom directory and its sub-directories for audio files using node fs module and upload them to mongodb gridfs. Watches directory for changes and update database. Serves streams of audio files stored on mongodb gridfs through express server and node streams. Custom music player with library, filters by artists, albums, genre, now playing, volume, shuffle, loop, and audio seeking made with react components and state handling through redux, responsive design using css media queries and percentage computed values.",
-            "github": "https://github.com/SajeelKh/Music-Streaming-App-React-Node",
+            "name": "Online Marketplace For Freelance Services",
+            "description": "Online marketplace for software developers to advertise their skills and provide services that they are good at.\nReactjs frontend using scss and css-grids and media queries to achieve responsive design.\nExpress backend with mongodb database.\nAWS S3 to store files.",
+            "github": "https://github.com/SajeelKh/Marketplace-ForFreelance-Services",
             "image": "music-player.gif"
         }
     ]
