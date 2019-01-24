@@ -1,9 +1,9 @@
 {
-  "main.css": "/static/css/main.7259eaaf.chunk.css",
-  "main.js": "/static/js/main.6bb23107.chunk.js",
-  "main.js.map": "/static/js/main.6bb23107.chunk.js.map",
-  "static/js/1.a3e427e3.chunk.js": "/static/js/1.a3e427e3.chunk.js",
-  "static/js/1.a3e427e3.chunk.js.map": "/static/js/1.a3e427e3.chunk.js.map",
+  "main.css": "/static/css/main.abbdd3e8.chunk.css",
+  "main.js": "/static/js/main.4e1fc808.chunk.js",
+  "main.js.map": "/static/js/main.4e1fc808.chunk.js.map",
+  "static/js/1.8e8482e4.chunk.js": "/static/js/1.8e8482e4.chunk.js",
+  "static/js/1.8e8482e4.chunk.js.map": "/static/js/1.8e8482e4.chunk.js.map",
   "runtime~main.js": "/static/js/runtime~main.229c360f.js",
   "runtime~main.js.map": "/static/js/runtime~main.229c360f.js.map",
   "static/media/music-player.gif": "/static/media/music-player.c722e271.gif",
@@ -16,8 +16,8 @@
   "static/media/stars.svg": "/static/media/stars.f2d3cda4.svg",
   "static/media/sun.svg": "/static/media/sun.fb5f29d3.svg",
   "static/media/frontend.svg": "/static/media/frontend.83ff3d1d.svg",
-  "static/css/main.7259eaaf.chunk.css.map": "/static/css/main.7259eaaf.chunk.css.map",
+  "static/css/main.abbdd3e8.chunk.css.map": "/static/css/main.abbdd3e8.chunk.css.map",
   "index.html": "/index.html",
-  "precache-manifest.17b7cbd050a295666712421db56c4d1c.js": "/precache-manifest.17b7cbd050a295666712421db56c4d1c.js",
+  "precache-manifest.6e4ad18d958201d7127b95fc778083b8.js": "/precache-manifest.6e4ad18d958201d7127b95fc778083b8.js",
   "service-worker.js": "/service-worker.js"
 }
