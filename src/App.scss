@@ -3,12 +3,18 @@
 $primary-gray: linear-gradient(180deg, rgba(40,44,52,1) 0%, rgba(83,88,97,1) 50%, rgba(158,166,172,1) 100%);
 
 .App {
+  width: 100vw;
   text-align: center;
   display: grid;
   grid-template-rows: 100vh minmax(100vh, auto) minmax(100vh, auto) 300px;
   grid-template-areas: "headline" "skills" "portfolio" "footer";
   overflow: hidden;
   font-family: Nixie One, Quicksand,'Courier New', Courier, monospace;
+
+  @media screen and (max-width: 800px){
+    grid-template-rows: max-content auto auto 300px;
+    overflow: visible; 
+  }
 }
 .Headline {
   grid-area: headline;
@@ -182,7 +188,7 @@ p {
 
 .navbar {
   width: 100%;
-  height: 50px;
+  height: inherit;
   display: flex;
   opacity: 0.6;
   background: black;
