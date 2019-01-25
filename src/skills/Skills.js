@@ -1,6 +1,6 @@
 import React from 'react';
 import WayPoint from 'react-waypoint';
-import { TweenLite, CSSPlugin, TimelineLite } from 'gsap/all';
+import { CSSPlugin, TimelineLite } from 'gsap/all';
 import {ReactComponent as MernStack} from '../assets/mern-stack.svg';
 import {ReactComponent as Frontend} from '../assets/frontend.svg';
 import {ReactComponent as GraphicsDesign} from '../assets/graphics-design.svg';

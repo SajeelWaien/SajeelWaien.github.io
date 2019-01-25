@@ -1,8 +1,7 @@
 import React from 'react';
 import data from '../assets/data.json';
 import WayPoint from 'react-waypoint'
-import { TweenMax, CSSPlugin, TimelineLite } from 'gsap/all';
-import bv from '../assets/music-player.gif';
+import { CSSPlugin, TimelineLite } from 'gsap/all';
 const image = require('../assets/music-player.gif');
 const C = CSSPlugin;
 
@@ -69,7 +68,7 @@ class Portfolio extends React.Component {
                                         <p>{item.description}</p>
                                     </div>
                                     <span className="portfolio-links-bar">
-                                        <a href={item.github} target="_blank">
+                                        <a href={item.github} target="_blank" rel="noopener noreferrer">
                                             <i className="fab fa-github"/>
                                         </a>
                                     </span>
