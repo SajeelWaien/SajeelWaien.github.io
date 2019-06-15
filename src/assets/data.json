@@ -11,7 +11,7 @@
             "description": "Online marketplace for software developers to advertise their skills and provide services that they are good at.\nReactjs frontend using scss and css-grids and media queries to achieve responsive design.\nExpress backend with mongodb database.\nAWS S3 to store files.",
             "github": "https://github.com/SajeelKh/Marketplace-ForFreelance-Services",
             "image": "marketplace.png"
-        }
+        },
         {
             "name": "CWare Technologies Official Website",
             "description": "Tech Company CWare Technologies' official website. Designed with SVG combined with CSS animations.",
