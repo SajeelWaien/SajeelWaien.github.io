@@ -12,5 +12,11 @@
             "github": "https://github.com/SajeelKh/Marketplace-ForFreelance-Services",
             "image": "marketplace.png"
         }
+        {
+            "name": "CWare Technologies Official Website",
+            "description": "Tech Company CWare Technologies' official website. Designed with SVG combined with CSS animations.",
+            "github": "http://www.cwaret.com/about",
+            "image": "cwaret.png"
+        }
     ]
 }
