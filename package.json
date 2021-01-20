@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "gh-pages": "^2.0.1",
-    "gsap": "^2.0.2",
+    "gsap": "^3.6.0",
     "node-sass": "^4.11.0",
     "particle.js": "^1.0.7",
     "react": "^16.7.0",
