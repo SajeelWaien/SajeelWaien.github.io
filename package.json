@@ -5,7 +5,7 @@
   "dependencies": {
     "gh-pages": "^2.0.1",
     "gsap": "^2.0.2",
-    "node-sass": "^4.11.0",
+    "node-sass": "^7.0.0",
     "particle.js": "^1.0.7",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
